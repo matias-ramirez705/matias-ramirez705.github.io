@@ -187,6 +187,36 @@
                 artificial aplicada. Siempre aprendiendo algo nuevo.
             </p>
             <div class="courses-grid">
+                <!--
+                ============================================================
+                PLANTILLA PARA AGREGAR UN NUEVO CURSO
+                ============================================================
+                Copia todo el bloque <article>...</article> de abajo,
+                pégalo después del último curso y cambia:
+                  - course-platform  → Plataforma (Coursera, Udemy, etc.)
+                  - course-status    → "status-done" (completado) o "status-progress" (en progreso)
+                  - course-title     → Nombre del curso
+                  - course-desc      → Descripción de lo que aprendiste
+                  - course-date      → Año
+                  - course-duration  → Duración (horas, meses, etc.)
+                ============================================================
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">[Plataforma]</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">[Nombre del curso]</h3>
+                    <p class="course-desc">
+                        [Descripción de lo que aprendiste, herramientas usadas, etc.]
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">[Año]</span>
+                        <span class="course-duration">[Duración]</span>
+                    </div>
+                </article>
+                ============================================================
+                -->
+
                 <!-- Curso 1 - Real del CV -->
                 <article class="course-card reveal">
                     <div class="course-top">
@@ -292,6 +322,40 @@
                 <div class="section-line"></div>
             </div>
             <div class="timeline">
+                <!--
+                ============================================================
+                PLANTILLA PARA AGREGAR UNA NUEVA EXPERIENCIA LABORAL
+                ============================================================
+                Copia todo el bloque <div class="timeline-item">...</div> de abajo,
+                pégalo ARRIBA del último trabajo (los más recientes van primero) y cambia:
+                  - timeline-role    → Tu cargo/puesto
+                  - timeline-date    → Fechas (ej: "Ene 2025 — Actualidad" o "Mar 2023 — Jul 2023")
+                  - timeline-company → Nombre de la empresa
+                  - timeline-tasks   → Lista de tareas/logros (puedes agregar o quitar <li>)
+                  - tag              → Tags de habilidades usadas (puedes agregar más <span class="tag">)
+                ============================================================
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">[Cargo]</h3>
+                            <span class="timeline-date">[Mes Año] — [Mes Año]</span>
+                        </div>
+                        <h4 class="timeline-company">[Empresa]</h4>
+                        <ul class="timeline-tasks">
+                            <li>[Tarea o logro 1]</li>
+                            <li>[Tarea o logro 2]</li>
+                            <li>[Tarea o logro 3]</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">[Habilidad 1]</span>
+                            <span class="tag">[Habilidad 2]</span>
+                        </div>
+                    </div>
+                </div>
+                ============================================================
+                -->
+
                 <!-- Trabajo 1 - SIMCE -->
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
@@ -418,6 +482,43 @@
                 análisis de datos e inteligencia artificial.
             </p>
             <div class="projects-grid">
+                <!--
+                ============================================================
+                PLANTILLA PARA AGREGAR UN NUEVO PROYECTO
+                ============================================================
+                Copia todo el bloque <article>...</article> de abajo,
+                pégalo después del último proyecto y cambia:
+                  - project-category    → Categoría (IA, Análisis de Datos, Automatización, IoT, etc.)
+                  - project-image-X     → Número 1, 2 o 3 (cambia el color de fondo del proyecto)
+                  - project-title       → Nombre del proyecto
+                  - project-desc        → Descripción de qué hace y qué tecnologías usaste
+                  - project-tech <span> → Tecnologías usadas (puedes agregar más <span>)
+                  - project-links <a>   → Enlaces a GitHub, demo, etc. (puedes quitar si no hay)
+                ============================================================
+                <article class="project-card reveal">
+                    <div class="project-image project-image-1">
+                        <div class="project-overlay">
+                            <span class="project-category">[Categoría]</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">[Nombre del proyecto]</h3>
+                        <p class="project-desc">
+                            [Descripción: qué hace el proyecto, qué problema resuelve,
+                             qué tecnologías usaste, etc.]
+                        </p>
+                        <div class="project-tech">
+                            <span>[Tecnología 1]</span>
+                            <span>[Tecnología 2]</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Krou705" target="_blank" rel="noopener">Ver código →</a>
+                        </div>
+                    </div>
+                </article>
+                ============================================================
+                -->
+
                 <!-- Proyecto 1 - RAG / LLM local -->
                 <article class="project-card reveal">
                     <div class="project-image project-image-1">
@@ -510,6 +611,38 @@
                 <div class="section-line"></div>
             </div>
             <div class="skills-grid">
+                <!--
+                ============================================================
+                PLANTILLAS PARA AGREGAR HABILIDADES
+                ============================================================
+                Hay 2 tipos de bloques de habilidad:
+
+                --- TIPO 1: Habilidad con BARRA DE PORCENTAJE ---
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">[Nombre de la categoría]</h3>
+                    <div class="skill-list">
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>[Nombre habilidad]</span><span>[XX]%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="[XX]%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                --- TIPO 2: Habilidad con TAGS (sin porcentaje) ---
+                <div class="skill-category reveal">
+                    <h3 class="skill-cat-title">[Nombre de la categoría]</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">[Habilidad 1]</span>
+                        <span class="skill-tag">[Habilidad 2]</span>
+                    </div>
+                </div>
+
+                IMPORTANTE: En las barras, el número del porcentaje debe aparecer 2 veces:
+                  1) En el texto visible: <span>85%</span>
+                  2) En el atributo data-width: data-width="85%"
+                ============================================================
+                -->
+
                 <div class="skill-category reveal">
                     <h3 class="skill-cat-title">Automatización Industrial</h3>
                     <div class="skill-list">
@@ -612,6 +745,38 @@
                     Mi CV y carta de presentación están disponibles en formato PDF para que los revises o descargues.
                 </p>
                 <div class="documents-grid">
+                    <!--
+                    ============================================================
+                    PLANTILLA PARA AGREGAR UN NUEVO DOCUMENTO DESCARGABLE
+                    ============================================================
+                    Copia todo el bloque <a>...</a> de abajo, pégalo después del último
+                    documento y cambia:
+                      - href            → Ruta al archivo (ej: "Documentos/certificado.pdf")
+                      - doc-label       → Tipo de documento (CV · PDF, Certificado · PDF, etc.)
+                      - doc-name        → Nombre visible del documento
+                      - doc-action      → Texto del enlace (puedes dejar "Ver / Descargar →")
+                    IMPORTANTE: El archivo PDF debe estar subido a la carpeta
+                                "Documentos/" en tu repositorio de GitHub.
+                    ============================================================
+                    <a href="Documentos/[archivo].pdf" target="_blank" rel="noopener" class="doc-card">
+                        <div class="doc-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="8" y1="13" x2="16" y2="13"/>
+                                <line x1="8" y1="17" x2="16" y2="17"/>
+                                <line x1="8" y1="9" x2="11" y2="9"/>
+                            </svg>
+                        </div>
+                        <div class="doc-content">
+                            <span class="doc-label">[Tipo] · PDF</span>
+                            <span class="doc-name">[Nombre del documento]</span>
+                            <span class="doc-action">Ver / Descargar →</span>
+                        </div>
+                    </a>
+                    ============================================================
+                    -->
+
                     <a href="Documentos/Curriculum_vitae_Matías_Ignacio_Ramírez_Benavides.pdf"
                        target="_blank" rel="noopener" class="doc-card">
                         <div class="doc-icon">
