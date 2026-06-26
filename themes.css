@@ -1,0 +1,758 @@
+/* ============================================
+   THEMES.CSS - Múltiples temas para el portfolio
+   ============================================
+   Cambia el tema desde el botón de paleta en la navbar.
+   Tu preferencia se guarda automáticamente en el navegador.
+
+   Temas disponibles:
+   1. dark      → Moderno Oscuro (default)
+   2. light     → Modo Claro
+   3. minimal   → Minimalista
+   4. terminal  → Terminal Hacker
+   5. pastel    → Pastel Suave
+   6. academic  → Académico
+   ============================================ */
+
+/* ============================================================
+   TEMA 1: DARK (Moderno Oscuro) - DEFAULT
+   ============================================================ */
+:root,
+:root[data-theme="dark"] {
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #0f1424;
+    --bg-tertiary: #161b2e;
+    --bg-card: #131826;
+    --bg-card-hover: #1a2033;
+
+    --text-primary: #e6edf3;
+    --text-secondary: #a0a8b8;
+    --text-muted: #6b7280;
+
+    --accent-cyan: #64ffda;
+    --accent-purple: #7c5cff;
+    --accent-blue: #4d8eff;
+    --accent-pink: #ff6b9d;
+
+    --gradient-primary: linear-gradient(135deg, #64ffda 0%, #7c5cff 100%);
+    --gradient-secondary: linear-gradient(135deg, #4d8eff 0%, #7c5cff 100%);
+
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(100, 255, 218, 0.3);
+
+    --grid-color: rgba(100, 255, 218, 0.03);
+    --glow-color: rgba(124, 92, 255, 0.2);
+    --glow-color-alt: rgba(100, 255, 218, 0.15);
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-heading: 'Inter', -apple-system, sans-serif;
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 14px;
+
+    --shadow-glow: 0 0 40px rgba(100, 255, 218, 0.15);
+}
+
+/* ============================================================
+   TEMA 2: LIGHT (Modo Claro)
+   ============================================================ */
+:root[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8fafc;
+
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+
+    --accent-cyan: #0ea5e9;
+    --accent-purple: #7c3aed;
+    --accent-blue: #2563eb;
+    --accent-pink: #ec4899;
+
+    --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #7c3aed 100%);
+    --gradient-secondary: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+
+    --border-color: rgba(15, 23, 42, 0.08);
+    --border-hover: rgba(14, 165, 233, 0.4);
+
+    --grid-color: rgba(14, 165, 233, 0.06);
+    --glow-color: rgba(124, 58, 237, 0.15);
+    --glow-color-alt: rgba(14, 165, 233, 0.1);
+
+    --shadow-glow: 0 10px 40px rgba(14, 165, 233, 0.12);
+}
+
+/* Ajustes específicos del tema claro */
+:root[data-theme="light"] .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom-color: var(--border-color);
+}
+
+:root[data-theme="light"] .navbar.scrolled {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+:root[data-theme="light"] body {
+    background-image:
+        radial-gradient(circle at 20% 10%, rgba(14, 165, 233, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(124, 58, 237, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+}
+
+:root[data-theme="light"] ::selection {
+    background: var(--accent-cyan);
+    color: #ffffff;
+}
+
+:root[data-theme="light"] .btn-primary {
+    color: #ffffff;
+}
+
+:root[data-theme="light"] .code-window {
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12), var(--shadow-glow);
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+}
+
+/* ============================================================
+   TEMA 3: MINIMAL (Minimalista)
+   ============================================================ */
+:root[data-theme="minimal"] {
+    --bg-primary: #fafafa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f4f4f5;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fafafa;
+
+    --text-primary: #0a0a0a;
+    --text-secondary: #525252;
+    --text-muted: #a3a3a3;
+
+    --accent-cyan: #171717;
+    --accent-purple: #404040;
+    --accent-blue: #525252;
+    --accent-pink: #737373;
+
+    --gradient-primary: linear-gradient(135deg, #171717 0%, #525252 100%);
+    --gradient-secondary: linear-gradient(135deg, #404040 0%, #737373 100%);
+
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(0, 0, 0, 0.4);
+
+    --grid-color: rgba(0, 0, 0, 0.025);
+    --glow-color: rgba(0, 0, 0, 0.04);
+    --glow-color-alt: rgba(0, 0, 0, 0.02);
+
+    --font-sans: 'Inter', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-heading: 'Inter', sans-serif;
+
+    --shadow-glow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="minimal"] body {
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+:root[data-theme="minimal"] h1,
+:root[data-theme="minimal"] h2,
+:root[data-theme="minimal"] h3 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+:root[data-theme="minimal"] .hero-name {
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+:root[data-theme="minimal"] .gradient-text {
+    background: none;
+    -webkit-text-fill-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+:root[data-theme="minimal"] .section-tag {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+:root[data-theme="minimal"] .btn-primary {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    box-shadow: none;
+}
+
+:root[data-theme="minimal"] .btn-primary:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+:root[data-theme="minimal"] .btn-secondary {
+    border-color: var(--border-color);
+}
+
+:root[data-theme="minimal"] .hero-social a:hover,
+:root[data-theme="minimal"] .skill-tag:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+:root[data-theme="minimal"] .nav-link:hover {
+    color: var(--text-primary);
+}
+
+:root[data-theme="minimal"] .nav-cta {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+:root[data-theme="minimal"] .nav-cta:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+:root[data-theme="minimal"] .code-window {
+    border-color: var(--border-color);
+}
+
+:root[data-theme="minimal"] ::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+}
+
+/* ============================================================
+   TEMA 4: TERMINAL (Hacker / Retro)
+   ============================================================ */
+:root[data-theme="terminal"] {
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0a;
+    --bg-tertiary: #141414;
+    --bg-card: #0d0d0d;
+    --bg-card-hover: #1a1a1a;
+
+    --text-primary: #00ff41;
+    --text-secondary: #33cc33;
+    --text-muted: #006600;
+
+    --accent-cyan: #00ff41;
+    --accent-purple: #39ff14;
+    --accent-blue: #00ff41;
+    --accent-pink: #ff00ff;
+
+    --gradient-primary: linear-gradient(135deg, #00ff41 0%, #39ff14 100%);
+    --gradient-secondary: linear-gradient(135deg, #00cc33 0%, #00ff41 100%);
+
+    --border-color: rgba(0, 255, 65, 0.2);
+    --border-hover: rgba(0, 255, 65, 0.6);
+
+    --grid-color: rgba(0, 255, 65, 0.04);
+    --glow-color: rgba(0, 255, 65, 0.15);
+    --glow-color-alt: rgba(0, 255, 65, 0.08);
+
+    --font-sans: 'JetBrains Mono', 'Courier New', monospace;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-heading: 'JetBrains Mono', monospace;
+
+    --shadow-glow: 0 0 30px rgba(0, 255, 65, 0.2);
+}
+
+:root[data-theme="terminal"] body {
+    font-family: var(--font-mono);
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+:root[data-theme="terminal"] .hero-name,
+:root[data-theme="terminal"] .section-title,
+:root[data-theme="terminal"] h1,
+:root[data-theme="terminal"] h2,
+:root[data-theme="terminal"] h3 {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+:root[data-theme="terminal"] .hero-greeting::before {
+    content: '> ';
+}
+
+:root[data-theme="terminal"] .section-tag::before {
+    content: '[';
+}
+:root[data-theme="terminal"] .section-tag::after {
+    content: ']';
+}
+
+:root[data-theme="terminal"] .gradient-text {
+    background: none;
+    -webkit-text-fill-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .btn {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    border-radius: 0;
+}
+
+:root[data-theme="terminal"] .btn-primary {
+    background: var(--accent-cyan);
+    color: var(--bg-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+:root[data-theme="terminal"] .btn-secondary {
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .btn-secondary:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+:root[data-theme="terminal"] .nav-logo {
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .logo-bracket {
+    color: var(--accent-pink);
+}
+
+:root[data-theme="terminal"] .nav-link::after {
+    background: var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .nav-cta {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    border-radius: 0;
+}
+
+:root[data-theme="terminal"] .timeline-dot {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 12px var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .timeline-tasks li::before {
+    content: '>';
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .course-card,
+:root[data-theme="terminal"] .timeline-content,
+:root[data-theme="terminal"] .skill-category,
+:root[data-theme="terminal"] .contact-form,
+:root[data-theme="terminal"] .about-card,
+:root[data-theme="terminal"] .code-window {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px var(--border-color), 0 0 20px rgba(0, 255, 65, 0.05);
+}
+
+:root[data-theme="terminal"] .course-card:hover,
+:root[data-theme="terminal"] .timeline-content:hover,
+:root[data-theme="terminal"] .skill-category:hover,
+:root[data-theme="terminal"] .about-card:hover {
+    box-shadow: 0 0 0 1px var(--accent-cyan), 0 0 25px rgba(0, 255, 65, 0.15);
+}
+
+:root[data-theme="terminal"] .project-card {
+    border-radius: 0;
+}
+
+:root[data-theme="terminal"] .project-category {
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+:root[data-theme="terminal"] .tag,
+:root[data-theme="terminal"] .skill-tag,
+:root[data-theme="terminal"] .project-tech span {
+    border-radius: 0;
+    background: rgba(0, 255, 65, 0.05);
+    color: var(--accent-cyan);
+    border: 1px solid var(--border-color);
+}
+
+:root[data-theme="terminal"] .status-available::before {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+:root[data-theme="terminal"] .form-group input,
+:root[data-theme="terminal"] .form-group textarea {
+    border-radius: 0;
+    font-family: var(--font-mono);
+}
+
+:root[data-theme="terminal"] .form-group input:focus,
+:root[data-theme="terminal"] .form-group textarea:focus {
+    box-shadow: 0 0 0 1px var(--accent-cyan), 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+:root[data-theme="terminal"] .hero-social a {
+    border-radius: 0;
+}
+
+:root[data-theme="terminal"] .hero-social a:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+:root[data-theme="terminal"] .code-body {
+    text-shadow: 0 0 3px rgba(0, 255, 65, 0.5);
+}
+
+:root[data-theme="terminal"] .c-key { color: #ff00ff; }
+:root[data-theme="terminal"] .c-prop { color: #00ffff; }
+:root[data-theme="terminal"] .c-str { color: #ffff00; }
+:root[data-theme="terminal"] .c-bool { color: #ff00ff; }
+
+:root[data-theme="terminal"] ::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 65, 0.3);
+}
+
+/* CRT scanline effect sutil */
+:root[data-theme="terminal"] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15) 0px,
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+}
+
+/* ============================================================
+   TEMA 5: PASTEL (Suave y cálido)
+   ============================================================ */
+:root[data-theme="pastel"] {
+    --bg-primary: #fef6f9;
+    --bg-secondary: #fdf2f5;
+    --bg-tertiary: #fce8ee;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fef6f9;
+
+    --text-primary: #4a3f47;
+    --text-secondary: #7a6b75;
+    --text-muted: #b5a8b0;
+
+    --accent-cyan: #5ec4ad;        /* menta */
+    --accent-purple: #c8a8e9;      /* lavanda */
+    --accent-blue: #a8c8ec;        /* cielo */
+    --accent-pink: #f4a4b8;        /* rosa */
+
+    --gradient-primary: linear-gradient(135deg, #f4a4b8 0%, #c8a8e9 100%);
+    --gradient-secondary: linear-gradient(135deg, #5ec4ad 0%, #a8c8ec 100%);
+
+    --border-color: rgba(244, 164, 184, 0.2);
+    --border-hover: rgba(244, 164, 184, 0.5);
+
+    --grid-color: rgba(244, 164, 184, 0.04);
+    --glow-color: rgba(200, 168, 233, 0.2);
+    --glow-color-alt: rgba(94, 196, 173, 0.1);
+
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-heading: 'Inter', sans-serif;
+
+    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-lg: 24px;
+
+    --shadow-glow: 0 10px 30px rgba(244, 164, 184, 0.15);
+}
+
+:root[data-theme="pastel"] body {
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(244, 164, 184, 0.15) 0%, transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(200, 168, 233, 0.15) 0%, transparent 35%),
+        radial-gradient(circle at 50% 50%, rgba(94, 196, 173, 0.08) 0%, transparent 40%);
+    background-attachment: fixed;
+}
+
+:root[data-theme="pastel"] .navbar.scrolled {
+    background: rgba(254, 246, 249, 0.85);
+    backdrop-filter: blur(12px);
+}
+
+:root[data-theme="pastel"] .hero-name {
+    font-weight: 700;
+}
+
+:root[data-theme="pastel"] .btn-primary {
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(244, 164, 184, 0.4);
+}
+
+:root[data-theme="pastel"] .btn-primary:hover {
+    box-shadow: 0 8px 25px rgba(244, 164, 184, 0.5);
+}
+
+:root[data-theme="pastel"] .btn-secondary {
+    border-color: rgba(244, 164, 184, 0.4);
+    color: var(--text-primary);
+}
+
+:root[data-theme="pastel"] .btn-secondary:hover {
+    border-color: var(--accent-pink);
+    color: var(--accent-pink);
+}
+
+:root[data-theme="pastel"] .course-card,
+:root[data-theme="pastel"] .timeline-content,
+:root[data-theme="pastel"] .skill-category,
+:root[data-theme="pastel"] .contact-form,
+:root[data-theme="pastel"] .about-card,
+:root[data-theme="pastel"] .project-card {
+    box-shadow: 0 4px 15px rgba(244, 164, 184, 0.08);
+}
+
+:root[data-theme="pastel"] .course-card:hover,
+:root[data-theme="pastel"] .timeline-content:hover,
+:root[data-theme="pastel"] .skill-category:hover,
+:root[data-theme="pastel"] .about-card:hover,
+:root[data-theme="pastel"] .project-card:hover {
+    box-shadow: 0 12px 30px rgba(244, 164, 184, 0.2);
+}
+
+:root[data-theme="pastel"] .status-available::before {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+:root[data-theme="pastel"] .hero-social a:hover {
+    box-shadow: 0 8px 20px rgba(244, 164, 184, 0.3);
+}
+
+:root[data-theme="pastel"] .tag {
+    background: rgba(200, 168, 233, 0.15);
+    color: var(--accent-purple);
+    border-color: rgba(200, 168, 233, 0.3);
+}
+
+:root[data-theme="pastel"] .nav-cta {
+    border-color: var(--accent-pink);
+    color: var(--accent-pink);
+}
+
+:root[data-theme="pastel"] .nav-cta:hover {
+    background: rgba(244, 164, 184, 0.1);
+}
+
+:root[data-theme="pastel"] ::-webkit-scrollbar-thumb {
+    background: var(--accent-pink);
+}
+
+:root[data-theme="pastel"] ::selection {
+    background: var(--accent-pink);
+    color: #ffffff;
+}
+
+/* ============================================================
+   TEMA 6: ACADEMIC (Sobrio / Profesional)
+   ============================================================ */
+:root[data-theme="academic"] {
+    --bg-primary: #fdfdf8;
+    --bg-secondary: #f8f6ef;
+    --bg-tertiary: #efece2;
+    --bg-card: #fffef9;
+    --bg-card-hover: #f8f6ef;
+
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-muted: #8a8a8a;
+
+    --accent-cyan: #1e3a5f;        /* azul marino */
+    --accent-purple: #8b0000;      /* granate */
+    --accent-blue: #1e3a5f;
+    --accent-pink: #8b0000;
+
+    --gradient-primary: linear-gradient(135deg, #1e3a5f 0%, #8b0000 100%);
+    --gradient-secondary: linear-gradient(135deg, #1e3a5f 0%, #4a4a4a 100%);
+
+    --border-color: rgba(26, 26, 26, 0.12);
+    --border-hover: rgba(30, 58, 95, 0.5);
+
+    --grid-color: rgba(30, 58, 95, 0.03);
+    --glow-color: rgba(139, 0, 0, 0.06);
+    --glow-color-alt: rgba(30, 58, 95, 0.05);
+
+    --font-sans: 'Merriweather', Georgia, 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-heading: 'Playfair Display', Georgia, serif;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 10px;
+
+    --shadow-glow: 0 4px 20px rgba(26, 26, 26, 0.08);
+}
+
+:root[data-theme="academic"] body {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+:root[data-theme="academic"] h1,
+:root[data-theme="academic"] h2,
+:root[data-theme="academic"] h3,
+:root[data-theme="academic"] .hero-name,
+:root[data-theme="academic"] .section-title,
+:root[data-theme="academic"] .hero-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+:root[data-theme="academic"] .hero-greeting,
+:root[data-theme="academic"] .section-tag,
+:root[data-theme="academic"] .course-platform,
+:root[data-theme="academic"] .course-meta,
+:root[data-theme="academic"] .timeline-date,
+:root[data-theme="academic"] .code-body,
+:root[data-theme="academic"] .info-label,
+:root[data-theme="academic"] .tag,
+:root[data-theme="academic"] .skill-tag,
+:root[data-theme="academic"] .project-tech span,
+:root[data-theme="academic"] .project-category,
+:root[data-theme="academic"] .nav-logo,
+:root[data-theme="academic"] .footer-top {
+    font-family: var(--font-mono);
+}
+
+:root[data-theme="academic"] .nav-link {
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+}
+
+:root[data-theme="academic"] .gradient-text {
+    background: none;
+    -webkit-text-fill-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    font-style: italic;
+}
+
+:root[data-theme="academic"] .btn {
+    font-family: var(--font-sans);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-transform: none;
+}
+
+:root[data-theme="academic"] .btn-primary {
+    background: var(--accent-cyan);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+:root[data-theme="academic"] .btn-primary:hover {
+    background: #2a4a6f;
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.25);
+}
+
+:root[data-theme="academic"] .btn-secondary {
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="academic"] .btn-secondary:hover {
+    background: rgba(30, 58, 95, 0.05);
+}
+
+:root[data-theme="academic"] .nav-cta {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+:root[data-theme="academic"] .course-card::before,
+:root[data-theme="academic"] .timeline::before {
+    background: var(--accent-cyan);
+}
+
+:root[data-theme="academic"] .timeline-dot {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 3px var(--bg-primary), 0 0 0 4px var(--accent-cyan);
+}
+
+:root[data-theme="academic"] .timeline-company {
+    color: var(--accent-purple);
+    font-style: italic;
+}
+
+:root[data-theme="academic"] .tag {
+    background: rgba(30, 58, 95, 0.06);
+    color: var(--accent-cyan);
+    border-color: rgba(30, 58, 95, 0.15);
+}
+
+:root[data-theme="academic"] .status-available::before {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+:root[data-theme="academic"] .navbar.scrolled {
+    background: rgba(253, 253, 248, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+:root[data-theme="academic"] .code-window {
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+}
+
+:root[data-theme="academic"] ::selection {
+    background: var(--accent-cyan);
+    color: #ffffff;
+}
+
+:root[data-theme="academic"] ::-webkit-scrollbar-thumb {
+    background: rgba(30, 58, 95, 0.4);
+}
+
+:root[data-theme="academic"] .hero-social a {
+    border-radius: var(--radius-sm);
+}
+
+/* ============================================================
+   TRANSICIÓN SUAVE ENTRE TEMAS
+   ============================================================ */
+:root[data-theme] body,
+:root[data-theme] .navbar,
+:root[data-theme] .btn,
+:root[data-theme] .course-card,
+:root[data-theme] .timeline-content,
+:root[data-theme] .skill-category,
+:root[data-theme] .contact-form,
+:root[data-theme] .about-card,
+:root[data-theme] .project-card,
+:root[data-theme] .code-window,
+:root[data-theme] .hero-social a,
+:root[data-theme] .form-group input,
+:root[data-theme] .form-group textarea,
+:root[data-theme] .nav-link,
+:root[data-theme] .nav-cta,
+:root[data-theme] .tag,
+:root[data-theme] .skill-tag {
+    transition: background-color 0.4s ease, color 0.4s ease,
+                border-color 0.4s ease, box-shadow 0.4s ease,
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

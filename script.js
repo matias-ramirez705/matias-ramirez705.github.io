@@ -15,6 +15,47 @@ document.addEventListener('DOMContentLoaded', function () {
         yearEl.textContent = new Date().getFullYear();
     }
 
+    // ===== THEME SWITCHER =====
+    // Aplica el tema guardado (o respeta la preferencia guardada)
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    applyTheme(savedTheme);
+
+    const themeBtn = document.getElementById('theme-btn');
+    const themeDropdown = document.getElementById('theme-dropdown');
+    const themeOptions = document.querySelectorAll('.theme-option');
+
+    if (themeBtn) {
+        themeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            themeDropdown.classList.toggle('open');
+        });
+    }
+
+    // Cierra el dropdown al hacer click fuera
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.theme-switcher')) {
+            themeDropdown.classList.remove('open');
+        }
+    });
+
+    // Maneja la selección de tema
+    themeOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const theme = option.getAttribute('data-theme');
+            applyTheme(theme);
+            localStorage.setItem('portfolio-theme', theme);
+            themeDropdown.classList.remove('open');
+        });
+    });
+
+    function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        // Actualiza el botón activo en el dropdown
+        themeOptions.forEach(opt => {
+            opt.classList.toggle('active', opt.getAttribute('data-theme') === theme);
+        });
+    }
+
     // ===== NAVBAR SCROLL =====
     const navbar = document.getElementById('navbar');
     const handleScroll = () => {
@@ -158,7 +199,7 @@ function handleSubmit(event) {
     }
 
     // CAMBIA este email por el tuyo
-    const yourEmail = 'tu@email.com';
+    const yourEmail = 'matiasramirez@example.com';
 
     const subject = encodeURIComponent(`Portfolio - Mensaje de ${name}`);
     const body = encodeURIComponent(
