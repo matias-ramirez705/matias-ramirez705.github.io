@@ -86,13 +86,9 @@
     --shadow-glow: 0 10px 40px rgba(14, 165, 233, 0.12);
 }
 
-/* Ajustes específicos del tema claro */
 :root[data-theme="light"] .navbar.scrolled {
     background: rgba(255, 255, 255, 0.85);
     border-bottom-color: var(--border-color);
-}
-
-:root[data-theme="light"] .navbar.scrolled {
     box-shadow: 0 1px 0 rgba(0,0,0,0.04);
 }
 
@@ -423,7 +419,6 @@
     background: rgba(0, 255, 65, 0.3);
 }
 
-/* CRT scanline effect sutil */
 :root[data-theme="terminal"] body::before {
     content: '';
     position: fixed;
@@ -454,10 +449,10 @@
     --text-secondary: #7a6b75;
     --text-muted: #b5a8b0;
 
-    --accent-cyan: #5ec4ad;        /* menta */
-    --accent-purple: #c8a8e9;      /* lavanda */
-    --accent-blue: #a8c8ec;        /* cielo */
-    --accent-pink: #f4a4b8;        /* rosa */
+    --accent-cyan: #5ec4ad;
+    --accent-purple: #c8a8e9;
+    --accent-blue: #a8c8ec;
+    --accent-pink: #f4a4b8;
 
     --gradient-primary: linear-gradient(135deg, #f4a4b8 0%, #c8a8e9 100%);
     --gradient-secondary: linear-gradient(135deg, #5ec4ad 0%, #a8c8ec 100%);
@@ -580,8 +575,8 @@
     --text-secondary: #4a4a4a;
     --text-muted: #8a8a8a;
 
-    --accent-cyan: #1e3a5f;        /* azul marino */
-    --accent-purple: #8b0000;      /* granate */
+    --accent-cyan: #1e3a5f;
+    --accent-purple: #8b0000;
     --accent-blue: #1e3a5f;
     --accent-pink: #8b0000;
 
