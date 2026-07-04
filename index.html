@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </section>
 
-        <!-- ===== CERTIFICACIONES ===== -->
+    <!-- ===== CERTIFICACIONES ===== -->
     <section id="certificaciones" class="section section-alt">
         <div class="container">
             <div class="section-header reveal">
@@ -359,29 +359,405 @@ document.addEventListener("DOMContentLoaded", function () {
                 Algunos de los certificados obtenidos durante mi formación en análisis de datos,
                 inteligencia artificial, automatización y programación.
             </p>
+
+            <!--
+            ============================================================
+            PLANTILLA PARA AGREGAR UNA NUEVA CERTIFICACIÓN
+            ============================================================
+            Copia todo el bloque <article>...</article> de abajo,
+            pégalo después del último certificado y cambia:
+              - course-platform  → Plataforma (Google, Santander, Stanford, etc.)
+              - course-status    → "status-done" (completado) o "status-progress" (en progreso)
+              - course-title     → Nombre del certificado
+              - course-desc      → Descripción de lo que aprendiste
+              - course-date      → Año
+              - course-duration  → "Certificado" o duración
+              - href de la imagen → Ruta al certificado (ej: "Documentos/Certificados/nombre.jpg")
+              - data-gallery     → Déjalo como "certificados" para que se agrupen en la galería
+            ============================================================
             <article class="course-card reveal">
                 <div class="course-top">
-                    <span class="course-platform">Google</span>
+                    <span class="course-platform">[Plataforma]</span>
                     <span class="course-status status-done">Completado</span>
                 </div>
-                <h3 class="course-title">Google Data Analytics</h3>
+                <h3 class="course-title">[Nombre del certificado]</h3>
                 <p class="course-desc">
-                    Certificación enfocada en limpieza, transformación, análisis y visualización
-                    de datos utilizando SQL, hojas de cálculo, Tableau y Python para la toma de
-                    decisiones basada en datos.
+                    [Descripción de lo que aprendiste y herramientas usadas.]
                 </p>
                 <div class="course-meta">
-                    <span class="course-date">2026</span>
+                    <span class="course-date">[Año]</span>
                     <span class="course-duration">Certificado</span>
                 </div>
                 <div class="project-links">
-                    <a href="Documentos/Certificados/Google_Data_Analytics.jpg"
-                    class="glightbox"
-                    data-gallery="certificados">
+                    <a href="Documentos/Certificados/[archivo].jpg"
+                       class="glightbox"
+                       data-gallery="certificados">
                         Ver certificado →
                     </a>
                 </div>
             </article>
+            ============================================================
+            -->
+
+            <div class="courses-grid">
+
+                <!-- Certificado 1 - Google Data Analytics -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Google</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Google Data Analytics</h3>
+                    <p class="course-desc">
+                        Certificación enfocada en limpieza, transformación, análisis y visualización
+                        de datos utilizando SQL, hojas de cálculo, Tableau y Python para la toma de
+                        decisiones basada en datos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2026</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Google_Data_Analytics.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 2 - Iniciación al Desarrollo con IA -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">SENCE / Talento Digital</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Iniciación al Desarrollo con IA</h3>
+                    <p class="course-desc">
+                        Introducción al desarrollo de soluciones basadas en inteligencia artificial,
+                        cubriendo conceptos fundamentales de IA, integración de modelos en
+                        aplicaciones y casos de uso prácticos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/CERTIFICADO DE INICIACIÓN AL DESARROLLO CON IA.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 3 - Gestión de Datos -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">SENCE / Talento Digital</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Gestión de Datos</h3>
+                    <p class="course-desc">
+                        Curso enfocado en la gestión eficiente de datos: modelado, almacenamiento,
+                        consultas y buenas prácticas para el manejo de bases de datos en entornos
+                        profesionales.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Certificado Gestion de Datos_Matías Ignacio Ramírez Benavides.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 4 - Excel Imparable -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Formación online</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Excel Imparable</h3>
+                    <p class="course-desc">
+                        Curso intensivo de Excel enfocado en automatización con macros, tablas
+                        dinámicas, fórmulas avanzadas y dashboards para análisis de datos y
+                        reporting profesional.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Certificado-Excel-Imparable.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 5 - Acelerador Power BI + IA -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Formación online</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Acelerador de Carrera con Power BI + IA</h3>
+                    <p class="course-desc">
+                        Curso avanzado de Power BI integrado con inteligencia artificial para
+                        crear reportes interactivos, transformación de datos con Power Query,
+                        modelado DAX y visualizaciones avanzadas asistidas por IA.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Curso - Acelerador de Carrera con Power BI + IA.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 6 - Power BI -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Formación online</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Curso de Power BI</h3>
+                    <p class="course-desc">
+                        Formación en Power BI Desktop y Power BI Service: conexión a múltiples
+                        fuentes de datos, transformación con Power Query, modelado, cálculos DAX
+                        y publicación de dashboards interactivos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Curso Power BI.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 7 - Inmersión IA -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Santander / OpenAI</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Inmersión Inteligencia Artificial en la Práctica</h3>
+                    <p class="course-desc">
+                        Programa intensivo de aplicación práctica de IA: prompting avanzado,
+                        integración de LLMs en flujos de trabajo, automatización con IA y casos
+                        de uso reales en productividad y desarrollo.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Inmersión Inteligencia Artificial en la Práctica.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 8 - Proyecto 4.0 Automatización -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">UBB / Curso</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Proyecto 4.0 — Automatización e Industria 4.0</h3>
+                    <p class="course-desc">
+                        Participación en segunda edición del programa sobre Industria 4.0:
+                        automatización industrial, integración de tecnologías IoT, sistemas SCADA
+                        y transformación digital de procesos productivos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2024</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Proyecto 4.0 Automatización e Industria 4.0 segunda edición.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 9 - Semana de Python -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Comunidad Python</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Semana de Python en la Práctica</h3>
+                    <p class="course-desc">
+                        Semana intensiva de Python aplicado: fundamentos del lenguaje,
+                        automatización de tareas, análisis de datos con Pandas/NumPy y desarrollo
+                        de pequeños proyectos prácticos.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Semana de Python en la Práctica.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 10 - Stanford Code in Place (2 páginas) -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Stanford University</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Code in Place — Stanford University</h3>
+                    <p class="course-desc">
+                        Programa de introducción a la programación impartido por Stanford
+                        University, basado en el curso CS106A. Cubre fundamentos de Python,
+                        resolución de problemas, estructuras de datos y desarrollo de proyectos
+                        con énfasis en buenas prácticas de programación.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado · 2 páginas</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Certificate-of-Completion-Stanford-Universitys-Code-in-Place/Certificate of Completion Stanford University's Code in Place_page-0001.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado (pág. 1) →
+                        </a>
+                        <a href="Documentos/Certificados/Certificate-of-Completion-Stanford-Universitys-Code-in-Place/Certificate of Completion Stanford University's Code in Place_page-0002.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado (pág. 2) →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 11 - Santander Copilot -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Santander</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Microsoft Copilot</h3>
+                    <p class="course-desc">
+                        Curso de Santander sobre Microsoft Copilot: uso avanzado del asistente de
+                        IA en el ecosistema Microsoft 365, prompting efectivo y automatización de
+                        tareas con IA generativa.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Santander/Santander_Copilot.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 12 - Santander Excel -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Santander</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Excel para Business Analyst</h3>
+                    <p class="course-desc">
+                        Curso de Santander sobre Excel aplicado al análisis de negocios: tablas
+                        dinámicas avanzadas, fórmulas financieras, dashboards y visualización de
+                        datos para toma de decisiones.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Santander/Santander_Excel.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 13 - Santander Intro Ciencia de Datos -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Santander</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Introducción a la Ciencia de Datos</h3>
+                    <p class="course-desc">
+                        Curso introductorio de Santander sobre ciencia de datos: ciclo de vida
+                        de un proyecto de data science, exploración y limpieza de datos,
+                        fundamentos de machine learning y visualización.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Santander/Santander_Intro_Ciencia_Datos.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Certificado 14 - Santander Python -->
+                <article class="course-card reveal">
+                    <div class="course-top">
+                        <span class="course-platform">Santander</span>
+                        <span class="course-status status-done">Completado</span>
+                    </div>
+                    <h3 class="course-title">Python para Data Science</h3>
+                    <p class="course-desc">
+                        Curso de Santander sobre Python aplicado a ciencia de datos: sintaxis del
+                        lenguaje, estructuras de datos, NumPy, Pandas y visualización con
+                        Matplotlib/Seaborn para análisis exploratorio.
+                    </p>
+                    <div class="course-meta">
+                        <span class="course-date">2025</span>
+                        <span class="course-duration">Certificado</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="Documentos/Certificados/Santander/Santander_Python.jpg"
+                           class="glightbox"
+                           data-gallery="certificados">
+                            Ver certificado →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
         </div>
     </section>
 
